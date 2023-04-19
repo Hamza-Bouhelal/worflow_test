@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "browser:download": "playwright install --with-deps chromium", 
-    "start": "ts-node src/app.ts",
+    "start": "npm run browser:download && ts-node src/app.ts",
     "dev": "nodemon src/app.ts"
   },
   "keywords": [],
