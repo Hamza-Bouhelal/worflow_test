@@ -1,9 +1,5 @@
 name: Playwright Runner
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
   schedule:
   - cron: */5 * * * *
 jobs:
