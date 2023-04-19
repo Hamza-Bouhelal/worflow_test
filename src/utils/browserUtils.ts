@@ -10,7 +10,7 @@ import {
 export async function executeInBrowser(
   toExecute: (args: { page: Page }) => Promise<any>
 ) {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
   let result;
