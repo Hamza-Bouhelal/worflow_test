@@ -1,11 +1,4 @@
-import {
-  Browser,
-  BrowserContext,
-  chromium,
-  Page,
-  request,
-  APIRequestContext,
-} from "@playwright/test";
+import { chromium, Page } from "@playwright/test";
 
 export async function executeInBrowser(
   toExecute: (args: { page: Page }) => Promise<any>
